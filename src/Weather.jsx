@@ -5,6 +5,8 @@ import MoonImage from './img/icons8-lua-brilhante-16.png';
 import CloudSunImage from './img/icons8-sol-e-nuvem-48.png';
 import CloudMoonImage from './img/icons8-nuvem-e-lua-100.png';
 import CloudImage from './img/icons8-nuvem-48.png';
+import RainImage from './img/chuva.png';
+
 
 import Video from './img/fundo-video.mp4';
 
@@ -25,6 +27,10 @@ const Weather = () => {
         '03d': CloudImage, 
         '04d': CloudImage, 
         '04n': CloudImage,
+        '09d': RainImage, // Adicione a imagem de chuva para o dia chuvoso
+        '09n': RainImage, // Adicione a imagem de chuva para a noite chuvosa
+        '10d': RainImage, // Adicione a imagem de chuva para o dia chuvoso
+        '10n': RainImage, // Adicione a imagem de chuva para a noite chuvosa
     };
 
     const updateWeather = (iconCode) => {
