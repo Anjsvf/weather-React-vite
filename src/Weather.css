@@ -91,11 +91,15 @@ opacity: 0.9;
   height: 50px;  /* Altura do botão */
   margin: 19px;
   font-size: 1rem;
-  background-color: #100130; 
+  background-color: #b51b77; 
   color: #fff;
  border: 0;
   border-radius: 10px;
   cursor: pointer;
+}
+
+.weather-content button:hover{
+background-color: #be1c7d;
 }
 
 /* Estilos para a área de informações meteorológicas */
@@ -124,17 +128,24 @@ opacity: 0.9;
 
 @media screen and (max-width: 480px) {
   .weather-content h1 {
-      font-size: 2rem; /* Reduz o tamanho do título */
+      font-size: 20px; /* Reduz o tamanho do título */
   }
   .weather-content input[type="text"] {
-      font-size: 0.9rem; /* Reduz o tamanho da fonte da entrada de texto */
+      font-size: 20px; /* Reduz o tamanho da fonte da entrada de texto */
   }
   .weather-content button {
-      font-size: 0.9rem; /* Reduz o tamanho da fonte do botão */
+      font-size: 20px; /* Reduz o tamanho da fonte do botão */
   }
   #weather-icon img {
     height: 50px;
     width: auto;
+    ;
   }
-  
+  .weather-container {
+   
+    font-size: 20px;
+    margin-bottom: 40px;
+   
+    
+  }
 }

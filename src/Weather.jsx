@@ -28,11 +28,11 @@ const Weather = () => {
         '03d': CloudImage, 
         '04d': CloudImage, 
         '04n': CloudImage,
-        '09d': RainImage, // Adicione a imagem de chuva para o dia chuvoso
-        '09n': RainImage, // Adicione a imagem de chuva para a noite chuvosa
-        '10d': RainImage, // Adicione a imagem de chuva para o dia chuvoso
+        '09d': RainImage, 
+        '09n': RainImage, 
+        '10d': RainImage, 
         '10n': RainImage,
-        '50d': FogDayImage, // Adicione a imagem de chuva para a noite chuvosa
+        '50d': FogDayImage, 
     };
 
     const updateWeather = (iconCode) => {
@@ -86,7 +86,7 @@ const Weather = () => {
                 <source src={Video} type="video/mp4" />
             </video>
             <div className="weather-content">
-                <h1>PREVISÃO  TEMPO</h1>
+                <h1>PREVISÃO DO  TEMPO</h1>
                 <input
                     type="text"
                     placeholder="Digite uma localidade aqui"
