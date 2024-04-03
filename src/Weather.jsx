@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import './Weather.css';
 import SunImage from './img/sol.png';
-import MoonImage from './img/icons8-lua-brilhante-16.png';
+import MoonImage from './img/lua.png';
 import CloudSunImage from './img/icons8-sol-e-nuvem-48.png';
 import CloudMoonImage from './img/icons8-nuvem-e-lua-100.png';
-import CloudImage from './img/icons8-nuvem-48.png';
 import RainImage from './img/chuva.png';
+import CloudImage from './img/nuvens-quebradas.png'
+import  FogDayImage from './img/neblina.png'
 
 
-import Video from './img/fundo-video.mp4';
+import Video from './img/video-vid.mp4';
 
 const API_KEY = "2b7ecd77cb5c7164d356c5e26164f0c3";
 
@@ -30,7 +31,8 @@ const Weather = () => {
         '09d': RainImage, // Adicione a imagem de chuva para o dia chuvoso
         '09n': RainImage, // Adicione a imagem de chuva para a noite chuvosa
         '10d': RainImage, // Adicione a imagem de chuva para o dia chuvoso
-        '10n': RainImage, // Adicione a imagem de chuva para a noite chuvosa
+        '10n': RainImage,
+        '50d': FogDayImage, // Adicione a imagem de chuva para a noite chuvosa
     };
 
     const updateWeather = (iconCode) => {
