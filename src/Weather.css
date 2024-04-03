@@ -1,0 +1,137 @@
+/* Reset de estilos padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #fff;
+}
+input {
+  background-color: #157681;
+  border-radius: 26px;
+  color: #fff;
+  
+}
+::placeholder { /* Seletor para todos os navegadores */
+  color: rgba(255, 255, 255, 0.455); /* Cor que você deseja */
+  opacity: 6; /* Necessário para Firefox */
+}
+
+/* :-ms-input-placeholder 
+  /* color: rgb(255, 252, 252);
+} */
+
+/* ::-ms-input-placeholder {
+  color: rgb(255, 255, 255);
+}  */
+
+/* Estilo para o contêiner principal */
+.weather-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  font-size: 30px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; 
+}
+
+/* Estilo para o vídeo de fundo */
+.video-background {
+  position: absolute;
+opacity: 0.9;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  z-index: -1;
+  filter: brightness(70%); 
+}
+#weather-icon img {
+  height: 80px;
+  width: auto;
+}
+
+
+/* Estilo para o conteúdo da previsão do tempo */
+.weather-content {
+  z-index: 1; 
+  text-align: center;
+  color: #fff;
+}
+
+/* Estilo para o título */
+.weather-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* Estilo para a entrada de texto */
+.weather-content input[type="text"] {
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 80%;
+  outline: none;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Estilo para o botão de busca */
+.weather-content button {
+  padding: 10px 20px;
+  margin: 19px;
+  font-size: 1rem;
+  background-color: #0d697b; 
+  color: #fff;
+ border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Estilos para a área de informações meteorológicas */
+#weather-info {
+  margin-top: 20px;
+}
+
+/* Estilo para cada informação meteorológica */
+#weather-info > div {
+  margin-bottom: 10px;
+}
+/* Estilos para telas menores que 768px (tablets e celulares em modo paisagem) */
+@media screen and (max-width: 768px) {
+  .weather-content {
+      width: 90%; 
+  }
+}
+
+/* Estilos para telas menores que 576px (celulares em modo retrato) */
+@media screen and (max-width: 576px) {
+  .weather-content {
+      width: 95%; /* Reduz ainda mais a largura do conteúdo */
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .weather-content h1 {
+      font-size: 2rem; /* Reduz o tamanho do título */
+  }
+  .weather-content input[type="text"] {
+      font-size: 0.9rem; /* Reduz o tamanho da fonte da entrada de texto */
+  }
+  .weather-content button {
+      font-size: 0.9rem; /* Reduz o tamanho da fonte do botão */
+  }
+  #weather-icon img {
+    height: 50px;
+    width: auto;
+  }
+  
+}
