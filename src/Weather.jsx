@@ -9,7 +9,7 @@ import CloudImage from './img/nuvens-quebradas.png'
 import  FogDayImage from './img/neblina.png'
 
 
-import Video from './img/video-vid.mp4';
+import Video from './img/fundo-video.mp4';
 
 const API_KEY = "2b7ecd77cb5c7164d356c5e26164f0c3";
 
