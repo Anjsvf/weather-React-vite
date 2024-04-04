@@ -6,30 +6,27 @@
   font-family: Arial, Helvetica, sans-serif;
  
 }
+body{
+  overflow: hidden
+}
 input {
   background-color: rgba(251, 251, 251, 0.468);
   border-radius: 5px;
   
   
 }
-::placeholder { /* Seletor para todos os navegadores */
-  color: rgba(255, 255, 255, 0.582); /* Cor que você deseja */
-  opacity: 6; /* Necessário para Firefox */
+::placeholder { 
+  color: rgba(255, 255, 255, 0.582); 
+  opacity: 6;
 }
 
-/* :-ms-input-placeholder 
-  /* color: rgb(255, 252, 252);
-} */
 
-/* ::-ms-input-placeholder {
-  color: rgb(255, 255, 255);
-}  */
 
 /* Estilo para o contêiner principal */
 .weather-container {
   position: relative;
-  background: linear-gradient(to right, #6093bfad, hsla(208, 97%, 23%, 0.649));
-  /* background-color: #023e73b1; */
+  background: linear-gradient(to right, #5b98cead, hsla(208, 90%, 21%, 0.649));
+
   width: 100%;
   height: 100vh;
   font-size: 30px;
@@ -89,8 +86,8 @@ opacity: 0.9;
 /* Estilo para o botão de busca */
 .weather-content button {
   padding: 10px 20px;
-  width: 200px;  /* Largura do botão */
-  height: 50px;  /* Altura do botão */
+  width: 200px; 
+  height: 50px;  
   margin: 19px;
   font-size: 1rem;
   background-color: #0465ee; 
@@ -124,20 +121,20 @@ background-color: #0658cb;
 /* Estilos para telas menores que 576px (celulares em modo retrato) */
 @media screen and (max-width: 576px) {
   .weather-content {
-      width: 95%; /* Reduz ainda mais a largura do conteúdo */
+      width: 95%; 
   }
 }
 
 
 @media screen and (max-width: 480px) {
   .weather-content h1 {
-      font-size: 26px; /* Reduz o tamanho do título */
+      font-size: 26px; 
   }
   .weather-content input[type="text"] {
-      font-size: 20px; /* Reduz o tamanho da fonte da entrada de texto */
+      font-size: 20px; 
   }
   .weather-content button {
-      font-size: 20px; /* Reduz o tamanho da fonte do botão */
+      font-size: 20px; 
   }
   #weather-icon img {
     height: 50px;
@@ -151,4 +148,5 @@ background-color: #0658cb;
    
     
   }
+
 }
