@@ -63,15 +63,16 @@ const Weather = () => {
             })
             .then((data) => {
                 const cityName = data.name;
-                const temp = data.main.temp;
+                const temp = Math.round(data.main.temp); 
                 const desc = data.weather[0].description;
                 const icon = data.weather[0].icon;
-
-                setLocation(`Cidade: ${cityName}`);
-                setTemperature(`temperatura: ${temp.toFixed(1)} °C`);
-                setDescription(`Descrição: ${desc}`);
+            
+                setLocation(`Cidade:  ${cityName}`);
+                setTemperature(`temperatura: ${temp}°C`); // Usa a temperatura arredondada
+                setDescription(`Detalhes:  ${desc}`);
                 updateWeather(icon);
             })
+            
             .catch((error) => {
                 console.error("erro ao buscar a previsão do tempo:", error)
                 setLocation("erro, verifique sua cidade.");
