@@ -3,17 +3,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+ 
 }
 input {
-  background-color: #1c09985a;
-  border-radius: 26px;
-  color: #fff;
+  background-color: rgba(251, 251, 251, 0.468);
+  border-radius: 5px;
+  
   
 }
 ::placeholder { /* Seletor para todos os navegadores */
-  color: rgba(255, 255, 255, 0.674); /* Cor que você deseja */
+  color: rgba(255, 255, 255, 0.582); /* Cor que você deseja */
   opacity: 6; /* Necessário para Firefox */
 }
 
@@ -28,7 +28,8 @@ input {
 /* Estilo para o contêiner principal */
 .weather-container {
   position: relative;
-  background-color: #072cb076;
+  background: linear-gradient(to right, #6093bfad, hsla(208, 97%, 23%, 0.649));
+  /* background-color: #023e73b1; */
   width: 100%;
   height: 100vh;
   font-size: 30px;
@@ -61,13 +62,14 @@ opacity: 0.9;
 .weather-content {
   z-index: 1; 
   text-align: center;
-  color: #fff;
+  color: #BFA41B
 }
 
 /* Estilo para o título */
 .weather-content h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
+  color: #d56d4bcd;
 }
 
 /* Estilo para a entrada de texto */
@@ -91,7 +93,7 @@ opacity: 0.9;
   height: 50px;  /* Altura do botão */
   margin: 19px;
   font-size: 1rem;
-  background-color: #b51b77; 
+  background-color: #f58747; 
   color: #fff;
  border: 0;
   border-radius: 10px;
@@ -99,12 +101,13 @@ opacity: 0.9;
 }
 
 .weather-content button:hover{
-background-color: #be1c7d;
+background-color: #c3632c;
 }
 
 /* Estilos para a área de informações meteorológicas */
 #weather-info {
   margin-top: 20px;
+  color: #b69a12;
 }
 
 /* Estilo para cada informação meteorológica */

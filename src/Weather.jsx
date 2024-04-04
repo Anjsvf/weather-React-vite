@@ -1,12 +1,18 @@
 import React, { useState } from "react";
 import './Weather.css';
-import SunImage from './img/sol.png';
-import MoonImage from './img/lua.png';
-import CloudSunImage from './img/icons8-sol-e-nuvem-48.png';
-import CloudMoonImage from './img/icons8-nuvem-e-lua-100.png';
-import RainImage from './img/chuva.png';
-import CloudImage from './img/nuvens-quebradas.png'
-import  FogDayImage from './img/neblina.png'
+import Sol from './img/sol.svg';
+import Lua from './img/lua.svg';
+import Nuvenscomsoldia from './img/nuvenscomsoledispersasdia.svg'
+import Nuvenscomluanoite from './img/nuvenscomluaedispersasnoite.svg'
+import Nuvensdispersasdia from './img/nuvensdispersasdia.svg'
+import Nuvensdispersasnoite from './img/nuvensdispersasnooite.svg'
+import  Nuvensquebradasdia from './img/nuvensquebradasdia.svg'
+import Nuvensquebradasnoite from './img/nuvensquebradasnoite.svg'
+import Chuvadia from './img/chuvadia.svg'
+import Chuvanoite from './img/chuvafortenoite.svg'
+import Chuvafracadia from './img/chuvadia.svg'
+import  Chuvafracanoite from './img/chuvanoite.svg'
+import Chuvatrovaodia from './img/chuvatrovaodia.svg'
 
 
 import Video from './img/fundo-video.mp4';
@@ -21,18 +27,19 @@ const Weather = () => {
     const [weatherIcon, setWeatherIcon] = useState(null);
 
     const imageMap = {
-        '01d': SunImage,
-        '01n': MoonImage,
-        '02d': CloudSunImage,
-        '02n': CloudMoonImage,
-        '03d': CloudImage, 
-        '04d': CloudImage, 
-        '04n': CloudImage,
-        '09d': RainImage, 
-        '09n': RainImage, 
-        '10d': RainImage, 
-        '10n': RainImage,
-        '50d': FogDayImage, 
+        '01d': Sol,
+        '01n': Lua,
+        '02d': Nuvenscomsoldia,
+        '02n': Nuvenscomluanoite,
+        '03d': Nuvensdispersasdia, 
+        '03n': Nuvensdispersasnoite,  
+        '04d': Nuvensquebradasdia, 
+        '04n': Nuvensquebradasnoite,
+        '09d': Chuvadia, 
+        '09n': Chuvanoite, 
+        '10d': Chuvafracadia, 
+        '10n': Chuvafracanoite,
+        '11d': Chuvatrovaodia,
     };
 
     const updateWeather = (iconCode) => {
@@ -67,7 +74,7 @@ const Weather = () => {
             })
             .catch((error) => {
                 console.error("erro ao buscar a previsão do tempo:", error)
-                setLocation("erro ao verificar a previsão do tempo, verifique sua cidade.");
+                setLocation("erro, verifique sua cidade.");
                 setTemperature("");
                 setDescription("");
                 setWeatherIcon(null);
