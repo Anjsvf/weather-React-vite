@@ -73,7 +73,7 @@ const Weather = () => {
         })
 
         .catch((error) => {
-          console.error("erro ao buscar a previsão do tempo:", error);
+          console.error("erro ao buscar a previsão do tempo:",error);
           setLocation("erro, verifique sua cidade!.");
           setTemperature("");
           setDescription("");
